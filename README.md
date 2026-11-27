@@ -75,24 +75,9 @@ deploy/               the production configs: nginx and Umami
 docs/                 screenshots for this README
 ```
 
-## Make it your own
-
-The code is MIT, so build your own world from it. The words, name and images are mine; replace them with yours (see [License](#license)).
-
-1. **Copy.** The chapters are in `index.html`. The four corner labels for each chapter are in `CORNERS` in `main.js`, and the labels pinned to the planet (crater, strata, city lights) are in the pins list next to them.
-2. **Chapters.** Each `<section class="ch">` in `index.html` matches one key in `buildKeys()` and one entry in `STOPS`. To add or remove a chapter, change all three, plus `NAMES` and `CHAPTER_SLUGS` in `main.js`.
-3. **Look.** Colours are CSS variables at the top of `style.css`, and each chapter's background is set in `buildKeys()`. The type scale is the four `--t-*` variables.
-4. **Scroll length.** `#track { height }` in `style.css`.
-5. **Domain.** Replace `kohli.world` in `index.html` (canonical, Open Graph, JSON-LD), `sitemap.xml`, `robots.txt`, `site.webmanifest`, `SITE` in `tools/build-vault.mjs` and the files in `deploy/`.
-6. **Images.** `og.jpg` (1200×630), `apple-touch-icon.png` (180×180), `favicon.svg`.
-7. **Analytics.** Delete the `/u/k.js` script tag in `index.html` and `vault/index.html`, or set up your own Umami (see below). The tag only counts visits on kohli.world, so a fork that keeps it records nothing.
-8. **The vault.** Copy `tools/vault.example.json` to `tools/vault.private.json`, write your note, and run `npm run vault`.
-
-**Cache busting.** CSS and JS are linked with `?v=` query strings. Bump them in `index.html` whenever you change `style.css`, `main.js` or `vendor/`.
-
 ## Deploy
 
-It's a static site. Upload the site files and nothing else:
+It's a static site. Before deploying a change to `style.css`, `main.js` or `vendor/`, bump the `?v=` query strings in `index.html` so browsers fetch the new files. Then upload the site files and nothing else:
 
 ```sh
 rsync -av --delete \
@@ -148,9 +133,6 @@ Current Chrome, Edge, Firefox and Safari, on desktop and mobile. It needs JavaSc
 - the name and wordmark KOHLI●WORLD
 - `og.jpg`, `apple-touch-icon.png` and `favicon.svg`
 - the people on the night side
-
-If you build your own world from this, replace all of it with your own story, and don't publish a copy that presents itself as my site.
-
 **Bundled software:**
 
 | Component | Version | License |
