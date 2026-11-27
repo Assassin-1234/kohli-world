@@ -1,7 +1,7 @@
 /* KOHLI●WORLD
  * The dot in the domain is the world. One body, five working parts, one camera path.
  *
- * Code: MIT, (c) 2026 Angad Kohli. The personal content is not covered; see the README.
+ * (c) 2026 Angad Kohli. All rights reserved. See LICENSE.
  */
 import * as THREE from './vendor/three.module.js';
 

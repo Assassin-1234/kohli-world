@@ -125,15 +125,11 @@ Current Chrome, Edge, Firefox and Safari, on desktop and mobile. It needs JavaSc
 
 ## License
 
-**The code is MIT** (see [`LICENSE`](LICENSE)). That covers the HTML structure, CSS, JavaScript, shaders, tools and deploy configs.
+© 2026 Angad Kohli. **All rights reserved.** See [`LICENSE`](LICENSE).
 
-**The personal content is not.** It stays © Angad Kohli, all rights reserved:
+The source is public so you can read it and see how it's built. It is not open source: you may not copy, reuse, modify or host any part of it (code, shaders, design, copy, names or images) without written permission. To ask, write to angad@kohli.world.
 
-- the written copy in `index.html` and the vault's note
-- the name and wordmark KOHLI●WORLD
-- `og.jpg`, `apple-touch-icon.png` and `favicon.svg`
-- the people on the night side
-**Bundled software:**
+**Bundled software** keeps its own licenses:
 
 | Component | Version | License |
 |---|---|---|
