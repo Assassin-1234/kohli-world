@@ -1,0 +1,19 @@
+# private: the vault's plain text (the repo only carries the encrypted vault/data.js)
+tools/vault.private.json
+
+# private: working notes, never published
+answers.md
+prompt.md
+
+# secrets and keys
+.env
+*.env
+!.env.example
+*.pem
+*.key
+
+# local
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

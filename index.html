@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KOHLI●WORLD · Angad Kohli</title>
+<meta name="description" content="Angad Kohli: engineer, former international 10m air rifle shooter, founder of Audexis. A small world, built, defended and expanding.">
+<meta name="author" content="Angad Kohli">
+<meta name="theme-color" content="#0a0605">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kohli.world/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KOHLI●WORLD">
+<meta property="og:url" content="https://kohli.world/">
+<meta property="og:title" content="KOHLI●WORLD · Angad Kohli">
+<meta property="og:description" content="A small world, built, defended and expanding. Engineer, founder of Audexis, population: one.">
+<meta property="og:image" content="https://kohli.world/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The KOHLI●WORLD wordmark with a halftone planet as the dot, on deep red.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KOHLI●WORLD · Angad Kohli">
+<meta name="twitter:description" content="A small world, built, defended and expanding.">
+<meta name="twitter:image" content="https://kohli.world/og.jpg">
+<meta name="twitter:image:alt" content="The KOHLI●WORLD wordmark with a halftone planet as the dot, on deep red.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Angad Kohli",
+  "url": "https://kohli.world/",
+  "image": "https://kohli.world/og.jpg",
+  "jobTitle": "Founder",
+  "worksFor": { "@type": "Organization", "name": "Audexis Private Limited" },
+  "nationality": { "@type": "Country", "name": "India" },
+  "knowsAbout": ["Software engineering", "Artificial intelligence", "Cybersecurity", "Penetration testing", "Algorithmic trading", "10m air rifle"]
+}
+</script>
+<link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=20261123e">
+<link rel="modulepreload" href="vendor/three.module.js">
+<script src="vendor/lenis.min.js?v=20261123e"></script>
+<script defer src="/u/k.js" data-website-id="ef84b391-0935-4068-a740-7ba55824302e" data-domains="kohli.world" data-auto-track="false"></script>
+</head>
+<body>
+
+<!-- Erosion filters: type is eaten by noise rather than faded -->
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <defs id="erodeDefs"></defs>
+</svg>
+
+<div id="bg" aria-hidden="true"></div>
+
+<!-- type that lives BEHIND the world -->
+<div id="behind" aria-hidden="true">
+  <div class="word" id="word"><span class="w-l">KOHLI</span><span class="w-gap" id="gap"></span><span class="w-r">WORLD</span></div>
+  <div class="dof" id="dof"><span>BUILT.</span><span>DEFENDED.</span><span>EXPANDING<span class="w-gap" id="gap2"></span></span></div>
+  <div class="dof dof-sun" id="dofSun"><span>SUNNY</span><span>SIDE UP</span></div>
+</div>
+
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<!-- ============ chapters ============ -->
+<div id="chapters">
+
+  <section class="ch ch-hero" data-ch="0" aria-label="Arrival">
+    <p class="kicker k-tc">A small world<br>under construction</p>
+    <p class="hero-line">Angad Kohli. Based in India, usually building something.</p>
+  </section>
+
+  <section class="ch ch-thesis" data-ch="1" aria-label="The premise">
+    <h2 class="sr">Built. Defended. Expanding.</h2>
+  </section>
+
+  <section class="ch ch-surface" data-ch="2" aria-label="The surface">
+    <p class="label">I. Surface</p>
+    <h2 class="big erode">The<br>surface</h2>
+    <p class="copy">I started shooting 10m air rifle at 15 and went on to compete at international level, with a national bronze along the way.</p>
+    <p class="copy">At 19 I stopped. I wanted to do one thing properly, and I chose building. I&rsquo;d like to shoot again someday, when I have the time.</p>
+    <p class="copy">If shooting taught me one thing, it&rsquo;s that consistency is boring, and it&rsquo;s also the only thing that ever turned my potential into results. I still build everything that way.</p>
+  </section>
+
+  <section class="ch ch-shield" data-ch="3" aria-label="The shield: PMG-CSR">
+    <p class="label">II. Shield / PMG&#8209;CSR</p>
+    <h2 class="big erode">We attack<br>first.</h2>
+    <p class="copy">I started Audexis to build software where the outcome matters beyond the screen. We&rsquo;ve built classified AI/ML systems for defence and government.</p>
+    <p class="copy">PMG&#8209;CSR comes next: an autonomous penetration-testing platform for defence supply chains and critical national infrastructure. Within an authorised scope, it probes systems the way a real attacker would, so the weak points get found and fixed first.</p>
+    <p class="copy dim">It&rsquo;s the work I believe in most, and the one I plan to spend years on.</p>
+  </section>
+
+  <section class="ch ch-core" data-ch="4" aria-label="The core: iron">
+    <p class="label">III. Core / Iron</p>
+    <h2 class="big erode">Iron<br>core.</h2>
+    <p class="copy">I train practically every day. Bench is my favourite lift. I like having one part of the day where progress is measurable, immediate, and depends entirely on the work you put in.</p>
+    <dl class="readout">
+      <div><dt>Bench</dt><dd>100 kg</dd></div>
+      <div><dt>Sessions</dt><dd>Daily</dd></div>
+      <div><dt>Next</dt><dd>More</dd></div>
+    </dl>
+  </section>
+
+  <section class="ch ch-orbit" data-ch="5" aria-label="The moon: trading system">
+    <p class="label">IV. Satellite / The system</p>
+    <h2 class="big erode">To the<br>moon.</h2>
+    <p class="copy">I&rsquo;m building a system that trades crypto on its own. The engineering is the interesting part: turning market behaviour into a strategy you can repeat, testing it until you know where it breaks, then building the risk controls around it.</p>
+    <p class="copy dim">Still an experiment. I care how it works as much as what it makes.</p>
+    <dl class="readout">
+      <div><dt>Status</dt><dd>Testing</dd></div>
+      <div><dt>Market</dt><dd>Crypto</dd></div>
+      <div><dt>ETA moon</dt><dd id="eta">Pending</dd></div>
+    </dl>
+  </section>
+
+  <section class="ch ch-sun" data-ch="6" aria-label="The sun: SunnySideUp">
+    <p class="label">V. Star / SunnySideUp</p>
+    <p class="copy">Manya and I are building SunnySideUp: AI-powered influencer marketing, starting with cars. Every campaign starts with research into the market, the brand and the product. The data picks the concept and the creators, then we run it end to end.</p>
+    <p class="copy dim">The interesting part isn&rsquo;t generating AI influencers. It&rsquo;s rethinking how a whole campaign gets built, with research, creative direction, creator discovery and execution working as one process.</p>
+  </section>
+
+  <section class="ch ch-night" data-ch="7" aria-label="The night side: the people">
+    <p class="label">VI. Night side / The people</p>
+    <h2 class="big erode">Lights<br>on.</h2>
+    <p class="copy">Things get dark sometimes. When they do, these are the three I look for to figure out where I stand. They&rsquo;ve never moved.</p>
+    <ol class="people">
+      <li><p class="pp-head"><b>Ishan Bankal</b><span>IB &middot; Co-founder, 13 years</span></p><p class="pp-tx">Knew me from the very start, and has been figuring it all out on the way with me ever since.</p></li>
+      <li><p class="pp-head"><b>Anshaj Mishra</b><span>AM &middot; Closest friend</span></p><p class="pp-tx">One of my closest friends, and the coolest, most sorted person alive as far as I&rsquo;m concerned.</p></li>
+      <li><p class="pp-head"><b>Manya Tanwar</b><span>MT &middot; Best friend, since 2022</span></p><p class="pp-tx">Has seen every phase of my life and still chooses to stay. My pillar whenever things go south.</p></li>
+    </ol>
+  </section>
+
+  <section class="ch ch-end" data-ch="8" aria-label="Request landing">
+    <div class="end-card">
+      <p class="end-k">The KOHLI●WORLD edition</p>
+      <ol class="end-list">
+        <li><span>Surface</span><i>I</i></li>
+        <li><span>Shield / PMG-CSR</span><i>II</i></li>
+        <li><span>Core / Iron</span><i>III</i></li>
+        <li><span>Satellite / The system</span><i>IV</i></li>
+        <li><span>Star / SunnySideUp</span><i>V</i></li>
+        <li><span>Night side / The people</span><i>VI</i></li>
+      </ol>
+      <p class="end-rule">Operating principle: just do it. Start, figure it out as you go, own what you build.</p>
+      <p class="end-pop">Population <b class="pop">01<svg class="scribble" viewBox="0 0 140 80" aria-hidden="true"><path pathLength="1" d="M18 44 C 14 22, 52 8, 86 12 C 122 16, 132 40, 112 56 C 92 72, 40 74, 20 58 C 8 48, 22 30, 44 24 M 112 18 L 128 4"/></svg></b></p>
+      <a class="land" href="mailto:angad@kohli.world">Request landing &rarr;</a>
+    </div>
+    <p class="end-foot"><span>Est. 2019</span><span>Still under construction</span><span>&copy; 2026 Angad Kohli</span></p>
+  </section>
+</div>
+
+<!-- pins on the surface / strata labels, positioned from 3D -->
+<div id="pins" aria-hidden="true"></div>
+
+<!-- ============ instruments ============ -->
+<header class="hud" id="hud">
+  <a class="mark" href="#" id="home">KOHLI<i class="mark-dot"></i>WORLD</a>
+  <nav class="nav">
+    <button id="indexBtn" aria-expanded="false" aria-controls="index">Index</button>
+    <a class="cta" href="mailto:angad@kohli.world">Request landing</a>
+  </nav>
+  <div class="corner c-tl" id="cTL"></div>
+  <div class="corner c-tr" id="cTR"></div>
+  <div class="corner c-bl" id="cBL"></div>
+  <div class="corner c-br" id="cBR"></div>
+  <div class="chap" aria-live="polite"><b id="chapN">00</b><span id="chapName">Arrival</span></div>
+  <div class="scrollhint" id="scrollHint">Scroll</div>
+  <div class="clearance" id="clearance" hidden>Clearance / granted</div>
+  <div class="cross" id="cross" aria-hidden="true">
+    <i class="cx"></i><i class="cy"></i>
+    <span class="cross-y" id="crossY">Y 000</span>
+    <span class="cross-x" id="crossX">X 000</span>
+    <span class="cross-geo" id="crossGeo"></span>
+  </div>
+</header>
+
+<div id="grain" aria-hidden="true"></div>
+
+<section id="index" aria-label="Index" hidden>
+  <ol id="indexList"></ol>
+  <p class="index-foot">Five bodies, one owner</p>
+</section>
+
+<div id="loader" aria-hidden="true">
+  <p class="ld-k">Establishing orbit</p>
+  <p class="ld-n"><span id="ldN">000</span></p>
+  <p class="ld-s">KOHLI●WORLD</p>
+</div>
+
+<main id="track" aria-hidden="true"></main>
+
+<noscript><p class="noscript">KOHLI●WORLD needs JavaScript and WebGL. Angad Kohli, engineer and founder of Audexis. angad@kohli.world</p></noscript>
+
+<script type="module" src="main.js?v=20261123e"></script>
+</body>
+</html>

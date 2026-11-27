@@ -1,0 +1,8 @@
+{
+  "lines": [
+    "You found the weak point.",
+    "Copy this file to tools/vault.private.json, write your own note, then run: npm run vault"
+  ],
+  "email": "you@example.com",
+  "sign": "You"
+}

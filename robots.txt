@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# if you're a robot, don't. if you're not, you already know.
+Disallow: /vault/
+
+Sitemap: https://kohli.world/sitemap.xml

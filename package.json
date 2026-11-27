@@ -1,0 +1,17 @@
+{
+  "name": "kohli-world",
+  "version": "1.0.0",
+  "description": "KOHLI●WORLD: a personal site built as one halftone planet. Static, no build step, no dependencies.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Angad Kohli (https://kohli.world)",
+  "homepage": "https://kohli.world",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "vault": "node tools/build-vault.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

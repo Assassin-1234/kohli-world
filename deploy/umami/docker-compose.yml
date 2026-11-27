@@ -1,0 +1,35 @@
+# Umami analytics for kohli.world. Dashboard: stats.kohli.world. Tracker is proxied by nginx at kohli.world/u/.
+name: umami
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: umami
+      POSTGRES_USER: umami
+      POSTGRES_PASSWORD: ${DB_PASS}
+    volumes:
+      - db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U umami -d umami"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+    restart: unless-stopped
+  umami:
+    image: ghcr.io/umami-software/umami@sha256:b64f40400d77bcadd39cf5c62a1e368c99524ca442024f96e1133355a19a5dbc  # 3.5.0
+    ports:
+      - "127.0.0.1:3093:3000"
+    environment:
+      DATABASE_URL: postgresql://umami:${DB_PASS}@db:5432/umami
+      APP_SECRET: ${APP_SECRET}
+      CLIENT_IP_HEADER: x-real-ip
+      DISABLE_TELEMETRY: "1"
+      DISABLE_UPDATES: "1"
+    depends_on:
+      db:
+        condition: service_healthy
+    mem_limit: 768m
+    restart: unless-stopped
+volumes:
+  db:

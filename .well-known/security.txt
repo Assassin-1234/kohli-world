@@ -1,0 +1,9 @@
+# KOHLI●WORLD
+# You read the headers. Good.
+# Every shield has a weak point. This one is written down:
+# d2hlcmUgdGhlIHNoaWVsZCBpcyB0aGlubmVzdDogMjIuMDDCsE4gMTY0LjcywrBXLiBrbm9jayB0aGVyZS4=
+
+Contact: https://kohli.world/vault/
+Expires: 2027-11-23T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://kohli.world/.well-known/security.txt
