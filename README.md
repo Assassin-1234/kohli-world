@@ -39,7 +39,21 @@ The whole site is one WebGL scene and one camera path. The HTML chapters are rea
 - **Eroding type.** Big headings are eaten away by SVG `feTurbulence` filters instead of fading.
 - **Pins and HUD.** Labels on the planet are DOM elements projected from 3D every frame. The crosshair shows a live lat/lon of whatever is under the cursor.
 
-[`CONCEPTS.md`](CONCEPTS.md) explains the design: what each body of the planet stands for, and the visual rules.
+### The concept
+
+Every part of the planet does a real job, and each job stands for one part of a life. The parts depend on each other the way real physics does (the core generates the field that keeps the shield up), so it reads as one world rather than a list of sections.
+
+| Chapter | Body | Stands for |
+|---|---|---|
+| Arrival | the dot in the wordmark | a small world under construction |
+| I. Surface | the crust, with a 10.9 impact crater | 10m air rifle, where the precision came from |
+| II. Shield | a geodesic layer under attack | PMG-CSR, autonomous penetration testing |
+| III. Core | a cutaway to the iron core | training, every day |
+| IV. Satellite | the moon, its orbit drawn as a price trace | an autonomous trading system |
+| V. Star | a halftone sun rising behind the type | SunnySideUp |
+| VI. Night side | three equal city lights | the people |
+
+The rules: one type family (Archivo) in four sizes, cream, ink and signal red, everything 3D rendered as halftone, type that erodes instead of fading, and no glows, glass or gradients for their own sake.
 
 ## Structure
 
@@ -96,7 +110,7 @@ The site works on any static host, but the security headers matter. Production r
 - **Methods:** GET and HEAD only, apart from the analytics beacon.
 - **Caching:** HTML, CSS and JS are sent `no-cache`; fonts are cached for a year as immutable.
 
-[`SECURITY.md`](SECURITY.md) says how to report a vulnerability.
+**Found a security issue?** Email angad@kohli.world rather than opening a public issue. The vault doesn't count: getting in is the point.
 
 ## Analytics (optional)
 
@@ -126,8 +140,21 @@ Current Chrome, Edge, Firefox and Safari, on desktop and mobile. It needs JavaSc
 
 ## License
 
-- **Code:** MIT. See [`LICENSE`](LICENSE).
-- **Personal content:** not covered by the MIT license, © Angad Kohli. That's the written copy, the KOHLI●WORLD name and wordmark, the images, and the people on the night side.
-- **Bundled software:** three.js (MIT), Lenis (MIT) and Archivo (SIL OFL 1.1).
+**The code is MIT** (see [`LICENSE`](LICENSE)). That covers the HTML structure, CSS, JavaScript, shaders, tools and deploy configs.
 
-[`NOTICE.md`](NOTICE.md) has the details.
+**The personal content is not.** It stays © Angad Kohli, all rights reserved:
+
+- the written copy in `index.html` and the vault's note
+- the name and wordmark KOHLI●WORLD
+- `og.jpg`, `apple-touch-icon.png` and `favicon.svg`
+- the people on the night side
+
+If you build your own world from this, replace all of it with your own story, and don't publish a copy that presents itself as my site.
+
+**Bundled software:**
+
+| Component | Version | License |
+|---|---|---|
+| [three.js](https://threejs.org) | r160 | MIT, [`vendor/licenses/three.js-LICENSE.txt`](vendor/licenses/three.js-LICENSE.txt) |
+| [Lenis](https://github.com/darkroomengineering/lenis) | 1.1.13 | MIT, [`vendor/licenses/lenis-LICENSE.txt`](vendor/licenses/lenis-LICENSE.txt) |
+| [Archivo](https://github.com/Omnibus-Type/Archivo) | variable | SIL Open Font License 1.1, [`fonts/OFL.txt`](fonts/OFL.txt) |
